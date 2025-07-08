@@ -32,12 +32,11 @@ address,caption,cite,code,dfn,em,var {font-style: normal;}
 p {letter-spacing: -0.02rem;}
 
 /* Layout Common */
-.montserrat-<uniquifier> {
+/*.montserrat-<uniquifier> {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
-}
+}*/
 #wrap {float: left; width: 100%; position:relative;}
 #header {float: left; width: 100%;}
 #content {float: left; width: 100%;}
