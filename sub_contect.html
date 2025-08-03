@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>애드엑스</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/layout_1440px.css">
+	<link rel="stylesheet" href="css/layout_640px.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="SampleNav">
+			<a href="./index.html" id="HomeBtn">
+				<img src="images/adx_logo.svg" alt="" class="nomal_logo">
+				<img src="images/adx_logo_b.svg" alt="" class="active_logo">
+			</a>
+			<div id="GnbNav">
+				<ul>
+					<li><a href="https://linktr.ee/adx" target="_black">LINKTREE</a></li>
+					<li><a href="./sub_about_us.html">ABOUT</a></li>
+					<li><a href="./sub_work_default.html">WORK</a></li>
+					<li><a href="./sub_portfolio.html">PORTFOLIO</a></li>
+					<li><a href="./sub_contect.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div id="MobileBtn">
+				<img src="./images/mobile_menu.svg" alt="" class="menu_ico">
+				<img src="./images/mobile_close.svg" alt="" class="close_ico">
+			</div>
+			<div id="MobileNav">
+				<ul>
+					<li><a href="https://linktr.ee/adx">LINKTREE</a></li>
+					<li><a href="./sub_about_us.html">ABOUT</a></li>
+					<li><a href="./sub_work_default.html">WORK</a></li>
+					<li><a href="./sub_portfolio.html">PORTFOLIO</a></li>
+					<li><a href="./sub_contect.html">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="SubBgWrap" class="contect_bg">
+			<div class="section_bg"></div>
+			<div class="sub_title_wrap">
+				<h3 class="suit">Contact</h3>
+				<p class="suit">당신의 비즈니스, ADX와 함께 더 높이 날다.</p>
+			</div>
+			<img src="./images/iconamoon_mouse-light.svg" alt="" class="ico_mouse">
+		</div>
+		<form class="consult-form" action="/submit" method="post">
+			<div class="form-grid">
+		    	<div class="form-group">
+			      	<label for="company">회사명<span class="point_t">*</span></label>
+			      	<input type="text" id="company" name="company" placeholder="업체명을 입력해주세요" required />
+			    </div>
+			    <div class="form-group">
+			    	<label for="industry">업종<span class="point_t">*</span></label>
+			    	<div class="custom-select">
+				    	<select id="industry" name="industry" required>
+				        	<option value="">업종을 입력해주세요</option>
+				        	<option value="it">IT</option>
+				        	<option value="education">교육</option>
+				        	<option value="medical">의료</option>
+				      	</select>
+			      	</div>
+			    </div>
+			    <div class="form-group">
+			    	<label for="name">담당자 성함<span class="point_t">*</span></label>
+			    	<input type="text" id="name" name="name" placeholder="성함을 입력해주세요" required />
+			    </div>
+			    <div class="form-group">
+			    	<label for="phone">연락처<span class="point_t">*</span></label>
+			    	<input type="text" id="phone" name="phone" placeholder="연락처를 입력해주세요" required />
+			    </div>
+			    <div class="form-group full-width">
+			    	<label for="email">이메일<span class="point_t">*</span></label>
+			    	<input type="email" id="email" name="email" placeholder="이메일을 입력해주세요" required />
+			    </div>
+
+				<div class="privacy-section">
+				    <div class="toggle_btn">
+				    	<img src="./images/blue_arrow_top.svg" alt="">
+				    	<h3>개인정보 수집 및 이용 동의</h3>
+				    </div>
+				    <div class="agree_wrap">
+					    <label class="check_box_wrap">
+					    	<input type="checkbox" name="privacy" required />
+					    	<span class="custom-box"></span>
+					    	<span class="label_text">개인정보 수집 및 이용 및 마케팅 활용 전체 동의</span>
+					    </label>
+					    <label class="check_box_wrap">
+					    	<input type="checkbox" name="privacy" required />
+					    	<span class="custom-box"></span>
+					    	<span class="label_text">개인정보보호정책에 동의합니다</span>
+					    </label>
+					    <div class="agree_info_box">
+					      <p>
+					        <strong>(목적)</strong> 가격문의 답변회신<br />
+					        <strong>(항목)</strong> 회사명, 담당자, 전화번호<br />
+					        <strong>(보유 및 이용기간)</strong> 최초 등록 시로부터 2년마다 동의 여부 확인
+					      </p>
+					    </div>
+					    <label class="check_box_wrap">
+					    	<input type="checkbox" name="privacy" required />
+					    	<span class="custom-box"></span>
+					    	<span class="label_text">[선택] 마케팅 수신 동의 : 무료 이벤트 소식 받기</span>
+					    </label>
+				  </div>
+				</div>
+		  		<div class="submit-button"><button type="submit" class="white_t">무료 상담하기</button></div>
+			</div>
+		</form>
+		<div class="bn_section">
+			<div class="banner_box">
+				<img src="./images/content_banner.png" alt="">
+				<div class="text_btn_box">
+					<h1 class="white_t">2025 업데이트된 제안서를 <br>받아보세요!</h1>
+					<p>지금 우리 브랜드에 딱 맞는<br class="mobile_br"> 최신 맞춤 제안서를 받아보세요.</p>
+					<button type="submit" class="point_t">무료 상담하기</button>
+				</div>	
+			</div>
+		</div>
+		<footer>
+			<div class="flex_row_space">
+				<img src="images/adx_logo.png" alt="">
+				<div class="footer_infor">
+					<ul>
+						<li><strong>H.Q.</strong>&nbsp;서울 강남구 삼성로 91길 30, 본월드 플레이스 빌딩 3층</li>
+						<li><strong>B1.</strong>&nbsp;서울 강남구 삼성로 91길 30, 본월드 플레이스 빌딩 4층</li>
+						<li><strong>B2.</strong>&nbsp;광주광역시 서구 내방로 233, 3층6층</li>
+					</ul>
+					<p class="e_mp_h">
+						a87439716@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;&nbsp;&nbsp;010-8743-9716
+					</p>
+					<span class="Copyright">Copyright © ADX. All rights reserved.<span>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/main.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>

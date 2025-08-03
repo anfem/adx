@@ -10,6 +10,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/layout_1440px.css">
+	<link rel="stylesheet" href="css/layout_640px.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
 	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -34,14 +36,30 @@
 <body>
 	<div id="wrap">
 		<div id="SampleNav">
-			<a href="./index.html" id="HomeBtn"><img src="images/adx_logo.svg" alt=""></a>
+			<a href="./index.html" id="HomeBtn">
+				<img src="images/adx_logo.svg" alt="" class="nomal_logo">
+				<img src="images/adx_logo_b.svg" alt="" class="active_logo">
+			</a>
 			<div id="GnbNav">
 				<ul>
-					<li><a href="#">LINKTREE</a></li>
-					<li><a href="#">ABOUT</a></li>
+					<li><a href="https://linktr.ee/adx" target="_black">LINKTREE</a></li>
+					<li><a href="./sub_about_us.html">ABOUT</a></li>
 					<li><a href="./sub_work_default.html">WORK</a></li>
-					<li><a href="#">PORTFOLIO</a></li>
-					<li><a href="#">CONTACT</a></li>
+					<li><a href="./sub_portfolio.html">PORTFOLIO</a></li>
+					<li><a href="./sub_contect.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div id="MobileBtn">
+				<img src="./images/mobile_menu.svg" alt="" class="menu_ico">
+				<img src="./images/mobile_close.svg" alt="" class="close_ico">
+			</div>
+			<div id="MobileNav">
+				<ul>
+					<li><a href="https://linktr.ee/adx">LINKTREE</a></li>
+					<li><a href="./sub_about_us.html">ABOUT</a></li>
+					<li><a href="./sub_work_default.html">WORK</a></li>
+					<li><a href="./sub_portfolio.html">PORTFOLIO</a></li>
+					<li><a href="./sub_contect.html">CONTACT</a></li>
 				</ul>
 			</div>
 		</div>
@@ -61,7 +79,7 @@
 					<span class="suit">Place Marketing</span>
 					<h3>우리 매장의 정보를<br>한 눈에 볼 수 있는 플레이스</h3>
 				</div>
-				<p class="suit">플레이스 마케팅을 통해 유입 상승의 길로 인도해 드리겠습니다.</p>
+				<p class="suit">플레이스 마케팅을 통한 노출 및 유입량 상승</p>
 			</div>
 			<div class="flex_row_th">
 				<div class="flex_items">
@@ -90,7 +108,7 @@
 					<div class="bann_text">
 						<h3><span class="point_t">플레이스</span>란?</h3>
 						<h4 class="suit">사용자가 주변의 매장이나 장소 정보를<br> 쉽고 빠르게 확인할 수 있는 지도 기반 검색 플랫폼</h4>
-						<p>사업자에게는 매장 정보 노출부터 리뷰 관리, 예약·주문·홍보·통계 분석까지<br> 한 번에 가능한 통합 마케팅 도구로, 온라인과 오프라인 고객을<br> 자연스럽게 연결해주는 핵심 채널</p>
+						<p>사업자에게는 매장 정보 노출부터 리뷰 관리,<br class="mobile_br"> 예약·주문·홍보·통계 분석까지<br class="pc_br"> 한 번에 가능한<br class="mobile_br"> 통합 마케팅 도구로, 온라인과 오프라인 고객을<br> 자연스럽게 연결해주는 핵심 채널</p>
 					</div>
 				</div>
 			</div>
@@ -127,15 +145,15 @@
 					<img src="./images/Rectangle.png" alt="" class="imot_ico">
 				</div>
 				<div class="line_text">
-					<h3 class="white_t">노출은 기본, 컨텐츠는 핵심입니다.</h3>
-					<p class="suit white_t">소비자들은 검색 후 1페이지에 노출된 업장들을 우선적으로 확인할 수 밖에 없습니다.<br>누가 봐도 가보고 싶은, 이용하고 싶은 업장을 만들기 위해 지금 순간에도 다른 업장들은 노력하고 있습니다.</p>
-					<h4 class="suit white_t">애드엑스가 대표님들의 업장을 '갈 수 밖에 없는 업장' 으로 만들어드리겠습니다</h4>
+					<h3 class="white_t">노출은 기본,<br class="mobile_br"> 컨텐츠는 핵심입니다.</h3>
+					<p class="suit white_t">소비자들은 검색 후 1페이지에 노출된 업장들을<br class="mobile_br"> 우선적으로 확인할 수 밖에 없습니다.<br>누가 봐도 가보고 싶은, 이용하고 싶은<br class="mobile_br"> 업장을 만들기 위해 지금 순간에도<br class="mobile_br"> 다른 업장들은 노력하고 있습니다.</p>
+					<h4 class="suit white_t">애드엑스가 대표님들의 업장을<br class="mobile_br"> '갈 수 밖에 없는 업장' 으로 만들어드리겠습니다</h4>
 				</div>
 				<div class="impact">
 					<div class="text_box">
 						<h3 class="point_t">플레이스의 효과</h3>
-						<h4 class="suit">플레이스를 관리받아 보기 전의 업장 매출표 / 그 후의 매출 전후 비교자료 확인이 가능합니다</h4>
-						<p class="suit">보다 체계적인 관리로 매출 상승까지 바라볼 수 있게 투명한 관리를 합니다.<br>이 처럼 플레이스를 잘 관리만 해도 높아진 소비자 유입과 더불어 매출 상승까지 가능합니다.</p>
+						<h4 class="suit">플레이스를 관리받아 보기 전의 업장 매출표 /<br class="mobile_br"> 그 후의 매출 전후 비교자료 확인이 가능합니다</h4>
+						<p class="suit">보다 체계적인 관리로 매출 상승까지<br class="mobile_br"> 바라볼 수 있게 투명한 관리를 합니다.<br>이 처럼 플레이스를 잘 관리만 해도 높아진<br class="mobile_br"> 소비자 유입과 더불어 매출 상승까지 가능합니다.</p>
 					</div>
 					<div class="img_box">
 						<img src="./images/sad.png" alt="" class="p_ab_1">

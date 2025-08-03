@@ -10,6 +10,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/layout_1440px.css">
+	<link rel="stylesheet" href="css/layout_640px.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
 	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -21,14 +23,30 @@
 <body>
 	<div id="wrap">
 		<div id="SampleNav">
-			<a href="./index.html" id="HomeBtn"><img src="images/adx_logo.svg" alt=""></a>
+			<a href="./index.html" id="HomeBtn">
+				<img src="images/adx_logo.svg" alt="" class="nomal_logo">
+				<img src="images/adx_logo_b.svg" alt="" class="active_logo">
+			</a>
 			<div id="GnbNav">
 				<ul>
-					<li><a href="#">LINKTREE</a></li>
-					<li><a href="#">ABOUT</a></li>
+					<li><a href="https://linktr.ee/adx" target="_black">LINKTREE</a></li>
+					<li><a href="./sub_about_us.html">ABOUT</a></li>
 					<li><a href="./sub_work_default.html">WORK</a></li>
-					<li><a href="#">PORTFOLIO</a></li>
-					<li><a href="#">CONTACT</a></li>
+					<li><a href="./sub_portfolio.html">PORTFOLIO</a></li>
+					<li><a href="./sub_contect.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div id="MobileBtn">
+				<img src="./images/mobile_menu.svg" alt="" class="menu_ico">
+				<img src="./images/mobile_close.svg" alt="" class="close_ico">
+			</div>
+			<div id="MobileNav">
+				<ul>
+					<li><a href="https://linktr.ee/adx">LINKTREE</a></li>
+					<li><a href="./sub_about_us.html">ABOUT</a></li>
+					<li><a href="./sub_work_default.html">WORK</a></li>
+					<li><a href="./sub_portfolio.html">PORTFOLIO</a></li>
+					<li><a href="./sub_contect.html">CONTACT</a></li>
 				</ul>
 			</div>
 		</div>
@@ -47,11 +65,11 @@
 					<h3>네이버 파워링크란?</h3>
 				</div>
 				<img src="./images/naver_search.png" alt="" class="naver_search">
-				<p class="suit">네이버 검색창에 특정 키워드를 검색했을 때, 검색결과에 제목과 설명, 사이트 URL이 나열된 것을 보실 수 있습니다.<br>이것이 바로 네이버 검색광고 대표 상품인 ‘파워링크’입니다.</p>
+				<p class="suit">네이버 검색창에 특정 키워드를 검색했을 때,<br class="mobile_br"> 검색결과에 제목과 설명, 사이트 URL이<br class="mobile_br"> 나열된 것을 보실 수 있습니다.<br>이것이 바로 네이버 검색광고 대표 상품인<br class="mobile_br"> ‘파워링크’입니다.</p>
 			</div>
 			<img src="./images/link_wrap_search.png" alt="" class="link_search">
 			<div class="pl_text_wrap">
-				<p class="suit">예를 들어, 요식업 브랜드를 운영하는 대표님이 네이버 통합 검색결과에 우리 식당 브랜드를 홍보하고 싶다면,<br>네이버 검색광고를 집행할 수 있습니다. ‘선릉맛집’ 키워드를 세팅하고 이용자가 네이버 검색창에 ‘선릉맛집’을 검색했을 때,<br>우리 브랜드 사이트 주소와 소개글이 보이게끔 하는 것 입니다.</p>
+				<p class="suit">예를 들어, 요식업 브랜드를 운영하는 대표님이<br class="mobile_br"> 네이버 통합 검색결과에 우리 식당 브랜드를<br class="mobile_br"> 홍보하고 싶다면,<br class="pc_br">네이버 검색광고를 집행할 수<br class="mobile_br"> 있습니다. ‘선릉맛집’ 키워드를 세팅하고<br class="mobile_br"> 이용자가 네이버 검색창에 ‘선릉맛집’을 검색했을 때,<br>우리 브랜드 사이트 주소와 소개글이 보이게끔<br class="mobile_br"> 하는 것 입니다.</p>
 			</div>
 			<div class="keyword_wrap">
 				<div class="keyword_balloon">
@@ -75,7 +93,7 @@
 					</div>
 				</div>
 				<div class="pl_text_wrap">
-					<p class="suit">브랜딩에 최적화된 언론홍보는 관련 키워드 검색 시 검색결과를 점유함으로서<br>브랜드 신뢰도 향상은 물론 기업 이슈 전달, 부정기사 위기관리 등의 직적접 효과가 있으며,<br>다양한 홍보 채널에 송출된 기사를 마케팅 자료로 활용할 수 있습니다.</p>
+					<p class="suit">파워링크 검색광고는 클릭이 일어난<br class="mobile_br"> 횟수만큼 비용을 지불하는 방식입니다.<br class="mobile_br"> 이용자가 내 광고를 몇 번이나 클릭했는지와<br class="mobile_br"> 클릭당 비용을 곱하여 광고비를<br class="mobile_br"> 산정하고 있습니다.<br class="mobile_br"> 여기에서 클릭당 비용은 각 키워드에<br class="mobile_br"> 광고주들이 입력한 입찰가와<br class="mobile_br"> 여러 조건을 고려하여 최종 결정됩니다.</p>
 				</div>
 			</div>
 			<div class="pl_text_wrap">
@@ -83,11 +101,11 @@
 					<span class="suit point_t">Shopping</span>
 					<h3>네이버 쇼핑검색이란?</h3>
 				</div>
-				<p class="suit">상품을 구매하고자 검색하는 이용자에게 광고주의 상품을 네이버 통합검색의<br>쇼핑 영역 및 네이버 쇼핑검색 결과 페이지에 노출하는 이미지형 검색광고 상품입니다.<br>광고 노출 영역을 네이버 쇼핑과 다양한 모바일 콘텐츠 매체로 확장하여<br>네이버 쇼핑의 수많은 상품 중 자신의 상품을 쉽고 빠르게 홍보할 수 있습니다.</p>
+				<p class="suit">상품을 구매하고자 검색하는 이용자에게<br class="mobile_br"> 광고주의 상품을 네이버 통합검색의<br class="pc_br">쇼핑 영역<br class="mobile_br"> 및 네이버 쇼핑검색 결과 페이지에 노출하는<br class="mobile_br"> 이미지형 검색광고 상품입니다.<br>광고 노출 영역을 네이버 쇼핑과 다양한 모바일<br class="mobile_br"> 콘텐츠 매체로 확장하여<br>네이버 쇼핑의 수많은 상품 중<br class="mobile_br"> 자신의 상품을 쉽고 빠르게 홍보할 수 있습니다.</p>
 				<div class="brawser_wrap">
 					<img src="./images/browser_wrap1.png" alt="">
 				</div>
-				<p class="suit white_t">키워드 별로 광고를 등록하여 노출하는 파워링크와 달리 네이버 쇼핑검색광고는 키워드를 선택할 필요 없이,<br>이미 네이버 쇼핑에 노출되고 있는 상품을 쇼핑 상위 영역에 노출하는 광고입니다.<br>네이버 통합검색(PC/모바일) 결과 ‘네이버쇼핑’ 영역 상단에 2개가 기본으로 노출되며,<br>키워드 및 노출유형에 따라 광고개수는 변화할 수 있습니다.</p>
+				<p class="suit white_t">키워드 별로 광고를 등록하여 노출하는<br class="mobile_br"> 파워링크와 달리 네이버 쇼핑검색광고는 키워드를<br class="mobile_br"> 선택할 필요 없이,<br class="pc_br">이미 네이버 쇼핑에 노출되고 있는<br class="mobile_br"> 상품을 쇼핑 상위 영역에 노출하는 광고입니다.<br>네이버 통합검색(PC/모바일) 결과 ‘네이버쇼핑’ 영역<br class="mobile_br"> 상단에 2개가 기본으로 노출되며,<br class="pc_br">키워드 및<br class="mobile_br"> 노출유형에 따라 광고개수는 변화할 수 있습니다.</p>
 			</div>
 
 			<div class="pl_text_wrap mar_120">
@@ -95,11 +113,11 @@
 					<span class="suit point_t">Display Advertisement</span>
 					<h3 class="white_t">네이버 디스플레이 광고 GFA란?</h3>
 				</div>
-				<p class="suit white_t">네이버 프리미엄 지면에 배너 디자인을 노출하는 광고입니다.</p>
+				<p class="suit white_t">네이버 프리미엄 지면에<br class="mobile_br"> 배너 디자인을 노출하는 광고입니다.</p>
 				<div class="brawser_wrap">
 					<img src="./images/browser_wrap2.png" alt="">
 				</div>
-				<p class="suit white_t">네이버 모바일 메인, 서브 지면과 밴드에서 배너, 동영상, 네이티브 이미지 등의<br>다양한 형태로 동시 노출이 가능합니다. 관심사, 나이, 지역 등 세밀하게 타겟팅이 가능하고,<br>실시간 입찰로 광고 최적화를 진행하여 효율을 높일 수 있는 광고입니다.<br>보통 쇼핑몰, 패션, 뷰티, 생활용품, 전자통신, 금융, 여행, 교육창업 등에서<br>프로모션이 있을 때, 가장 많이 활용합니다.</p>
+				<p class="suit white_t">네이버 모바일 메인, 서브 지면과 밴드에서<br class="mobile_br"> 배너, 동영상, 네이티브 이미지 등의<br>다양한 형태로 동시 노출이 가능합니다.<br class="mobile_br"> 관심사, 나이, 지역 등 세밀하게 타겟팅이 가능하고,<br>실시간 입찰로 광고 최적화를 진행하여<br class="mobile_br"> 효율을 높일 수 있는 광고입니다.<br>보통 쇼핑몰, 패션, 뷰티, 생활용품, 전자통신,<br class="mobile_br"> 금융, 여행, 교육창업 등에서<br class="pc_br">프로모션이 있을 때,<br class="mobile_br"> 가장 많이 활용합니다.</p>
 			</div>
 		</div>
 

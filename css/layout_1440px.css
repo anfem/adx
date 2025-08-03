@@ -1,0 +1,9 @@
+@media (max-width: 1440px) {
+	/*메인 섹션 START*/
+	/*네비게이션 영역 START*/
+	#SampleNav {padding:0 5.5556%;}
+	#GnbNav > ul {display:flex; gap:0; width:60vw; max-width:520px; justify-content: space-between;}
+	#GnbNav > ul > li a {padding:42px 10%; color:#fff; font-weight:600;}
+	/*네비게이션 영역 END*/
+	/*메인 섹션 END*/
+}

@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/stylesheet.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/layout_1440px.css">
+	<link rel="stylesheet" href="css/layout_640px.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
 	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -22,14 +24,30 @@
 <body>
 	<div id="wrap">
 		<div id="SampleNav">
-			<a href="./index.html" id="HomeBtn"><img src="images/adx_logo.svg" alt=""></a>
+			<a href="./index.html" id="HomeBtn">
+				<img src="images/adx_logo.svg" alt="" class="nomal_logo">
+				<img src="images/adx_logo_b.svg" alt="" class="active_logo">
+			</a>
 			<div id="GnbNav">
 				<ul>
-					<li><a href="#">LINKTREE</a></li>
-					<li><a href="#">ABOUT</a></li>
+					<li><a href="https://linktr.ee/adx" target="_black">LINKTREE</a></li>
+					<li><a href="./sub_about_us.html">ABOUT</a></li>
 					<li><a href="./sub_work_default.html">WORK</a></li>
-					<li><a href="#">PORTFOLIO</a></li>
-					<li><a href="#">CONTACT</a></li>
+					<li><a href="./sub_portfolio.html">PORTFOLIO</a></li>
+					<li><a href="./sub_contect.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div id="MobileBtn">
+				<img src="./images/mobile_menu.svg" alt="" class="menu_ico">
+				<img src="./images/mobile_close.svg" alt="" class="close_ico">
+			</div>
+			<div id="MobileNav">
+				<ul>
+					<li><a href="https://linktr.ee/adx">LINKTREE</a></li>
+					<li><a href="./sub_about_us.html">ABOUT</a></li>
+					<li><a href="./sub_work_default.html">WORK</a></li>
+					<li><a href="./sub_portfolio.html">PORTFOLIO</a></li>
+					<li><a href="./sub_contect.html">CONTACT</a></li>
 				</ul>
 			</div>
 		</div>
@@ -51,8 +69,8 @@
 		<div id="Section_s">
 			<div class="content_contain">
 				<div class="content">
-					<h3  class="info_title" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">우리는 실패를 두려워하지 않습니다.</h3>
-					<p class="info_contents" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1200">우리가 사는 세상에서 실패는 자연스러운 과정입니다.<br>또한, 우리가 얻을 수 있는 가장 귀중한 데이터입니다.<br>실패를 두려워하지 않는, 데이터를 부정하지 않는 마케터 집단<br><strong>우리의 진심이 널리 퍼지길 바랍니다.</strong></p>
+					<h3  class="info_title" data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="1200">우리는 실패를<br class="mobile_br"> 두려워하지 않습니다.</h3>
+					<p class="info_contents" data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="1200">우리가 사는 세상에서 실패는 자연스러운 과정입니다.<br class="pc_br"><br class="mobile_br">또한, 우리가 얻을 수 있는 가장 귀중한 데이터입니다.<br>실패를 두려워하지 않는,<br class="mobile_br"> 데이터를 부정하지 않는 마케터 집단<br><strong>우리의 진심이 널리 퍼지길 바랍니다.</strong></p>
 				</div>
 			</div>
 		</div>
@@ -60,8 +78,8 @@
 		<div id="Section_s">
 			<div class="content_contain">
 				<div class="content">
-					<h3  class="info_title" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">ADX 2022년 설립된 스타트업 기업입니다.</h3>
-					<p class="info_contents" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1200">디지털 퍼포먼스 광고를 시작으로<br>애드테크 커머스 브랜드기획 등<br><strong>수많은 도전들로 경험치를 쌓아가고 있습니다.</strong></p>
+					<h3  class="info_title" data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="1200">ADX 2022년 설립된<br class="mobile_br"> 스타트업 기업입니다.</h3>
+					<p class="info_contents" data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="1200">디지털 퍼포먼스 광고를 시작으로<br>애드테크 커머스 브랜드기획 등<br><strong>수많은 도전들로 경험치를 쌓아가고 있습니다.</strong></p>
 				</div>
 			</div>
 		</div>
@@ -69,15 +87,15 @@
 		<div id="Section_s">
 			<div class="content_contain">
 				<div class="content">
-					<h3  class="info_title" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">ADX은 수동적인 기업이었습니다. 인정합니다.</h3>
-					<p class="info_contents" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1200">그러나, 내면에 갇혀있지 않고 마침내 깨달았습니다.<br>직면해 있던 내외부적 문제점들은 더 이상 난제가 아닌<br>문제해결의 성취감을 얻기 위한 ADX의 원동력이었습니다.<br><strong>이는 ADX의 성장 이야기이며 앞으로도 계속될 것입니다.</strong></p>
+					<h3  class="info_title" data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="1200">ADX은 수동적인<br class="mobile_br"> 기업이었습니다. 인정합니다.</h3>
+					<p class="info_contents" data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="1200">그러나, 내면에 갇혀있지 않고 마침내 깨달았습니다.<br>직면해 있던 내외부적 문제점들은 더 이상<br class="mobile_br"> 난제가 아닌<br class="pc_br">문제해결의 성취감을 얻기 위한<br class="mobile_br"> ADX의 원동력이었습니다.<br><strong>이는 ADX의 성장 이야기이며 앞으로도 계속될 것입니다.</strong></p>
 				</div>
 			</div>
 		</div>
 
 		<footer>
 			<div class="flex_row_space">
-				<img src="images/adx_logo.png" alt="">
+				<img src="images/adx_logo.svg" alt="">
 				<div class="footer_infor">
 					<ul>
 						<li><strong>H.Q.</strong>&nbsp;서울 강남구 삼성로 91길 30, 본월드 플레이스 빌딩 3층</li>
