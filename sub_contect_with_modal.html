@@ -201,7 +201,7 @@
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
   (function() {
-    // TODO: EmailJS 퍼블릭 키로 교체
+    // TODO: EmailJS 퍼블릭 키로 교체******************
     emailjs.init("8677Gz68arGDt3ZZE");
   })();
 
@@ -235,13 +235,13 @@
       if (btn) { btn.disabled = true; if (btn.textContent) btn.textContent = "전송 중..."; if (btn.value) btn.value = "전송 중..."; }
 
       try {
-        // TODO: 서비스/템플릿 ID 교체
+        // TODO: 서비스/템플릿 ID 교체******************
         await emailjs.send("service_2yfl9nr", "template_qalyzoi", params);
-        resultEl.textContent = "정상적으로 전송되었습니다! 곧 연락드릴게요 🙌";
+        window.__openSendModal && window.__openSendModal("정상적으로 전송되었습니다! 곧 연락드릴게요 🙌", false);
         form.reset();
       } catch (err) {
         console.error(err);
-        resultEl.textContent = "전송에 실패했습니다. 잠시 후 다시 시도해 주세요 😢";
+        window.__openSendModal && window.__openSendModal("전송에 실패했습니다. 잠시 후 다시 시도해 주세요 😢", true);
       } finally {
         if (btn) { btn.disabled = false; if (btn.textContent) btn.textContent = origText; if (btn.value) btn.value = origText; }
       }
@@ -262,6 +262,48 @@ $(document).ready(function(){
     $arrowImg.toggleClass("rotated");
   });
 });
+</script>
+
+<div id="msgModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="msgModalTitle">
+  <div class="modal-dim" data-close="true"></div>
+  <div class="modal-dialog" role="document" tabindex="-1">
+    <button type="button" class="modal-close" aria-label="닫기" data-close="true">✕</button>
+    <div class="modal-body">
+      <div class="modal-icon" aria-hidden="true"></div>
+      <h3 id="msgModalTitle" class="suit">알림</h3>
+      <p id="msgModalText" class="suit"></p>
+      <button type="button" class="modal-ok" data-close="true">확인</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var modal = document.getElementById("msgModal");
+  var dialog = modal.querySelector(".modal-dialog");
+  var textEl = document.getElementById("msgModalText");
+
+  function openModal(message, isError){
+    textEl.textContent = message || "";
+    modal.classList.toggle("error", !!isError);
+    modal.setAttribute("aria-hidden", "false");
+    setTimeout(function(){ dialog && dialog.focus(); }, 0);
+    document.body.style.overflow = "hidden";
+  }
+  function closeModal(){
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  modal.addEventListener("click", function(e){
+    if (e.target && e.target.dataset && e.target.dataset.close === "true") closeModal();
+  });
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape" && modal.getAttribute("aria-hidden") === "false") closeModal();
+  });
+
+  window.__openSendModal = openModal;
+})();
 </script>
 
 </body>

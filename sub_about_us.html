@@ -10,8 +10,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/layout.css">
-	<link rel="stylesheet" href="css/layout_1440px.css">
-	<link rel="stylesheet" href="css/layout_640px.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
 	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -19,6 +17,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
 </head>
 <body>
 	<div id="wrap">
@@ -29,7 +28,7 @@
 			</a>
 			<div id="GnbNav">
 				<ul>
-					<li><a href="https://linktr.ee/adx" target="_black">LINKTREE</a></li>
+					<li><a href="https://linktr.ee/adx_official" target="_black">LINKTREE</a></li>
 					<li><a href="./sub_about_us.html">ABOUT</a></li>
 					<li><a href="./sub_work_default.html">WORK</a></li>
 					<li><a href="./sub_portfolio.html">PORTFOLIO</a></li>
@@ -42,7 +41,7 @@
 			</div>
 			<div id="MobileNav">
 				<ul>
-					<li><a href="https://linktr.ee/adx">LINKTREE</a></li>
+					<li><a href="https://linktr.ee/adx_official">LINKTREE</a></li>
 					<li><a href="./sub_about_us.html">ABOUT</a></li>
 					<li><a href="./sub_work_default.html">WORK</a></li>
 					<li><a href="./sub_portfolio.html">PORTFOLIO</a></li>
@@ -60,26 +59,26 @@
 		</div>
 		<div class="about_section1">
 			<div class="pl_text_wrap fl_row">
-				<div class="title_wrap al_center">
+				<div class="title_wrap al_center" data-aos="fade-right" data-aos-duration="1200">
 					<span class="suit">Brand Identity</span>
 					<h3>브랜드 아이덴티티</h3>
 				</div>
-				<p class="suit">ADX는 감성적이면서도 때로는 차갑습니다.<br>신뢰도를 기준으로 데이터를 소팅하고 개발하며<br class="mobile_br"> 이를 누구보다 잘 활용합니다.<br><strong>이 데이터를 기반으로 브랜드의 감성을 이해하고<br class="mobile_br"> 소재에 녹여내는 일에 특화된 마케터 집단입니다.</strong></p>
+				<p class="suit" data-aos="fade-left" data-aos-duration="1200">ADX는 감성적이면서도 때로는 차갑습니다.<br>신뢰도를 기준으로 데이터를 소팅하고 개발하며<br class="mobile_br"> 이를 누구보다 잘 활용합니다.<br><strong>이 데이터를 기반으로 브랜드의 감성을 이해하고<br class="mobile_br"> 소재에 녹여내는 일에 특화된 마케터 집단입니다.</strong></p>
 			</div>
 		</div>
 		<div class="about_section2">
 			<div class="flex_row_th">
 				<div class="score_wrap">
 					<span>함께한 광고주</span>
-					<h1 class="montserrat">1,254+</h1>
+					<h1 class="montserrat countup" data-count="1254" data-suffix="+">1,254+</h1>
 				</div>
 				<div class="score_wrap">
 					<span>집행한 광고건수</span>
-					<h1 class="montserrat point_t">16,329+</h1>
+					<h1 class="montserrat point_t countup" data-count="16329" data-suffix="+">16,329+</h1>
 				</div>
 				<div class="score_wrap">
 					<span>클라이언트 만족도</span>
-					<h1 class="montserrat">87.3%</h1>
+					<h1 class="montserrat countup" data-count="87.3" data-suffix="%">87.3%</h1>
 				</div>
 			</div>
 		</div>
@@ -139,6 +138,7 @@
 						<span>기술 지원팀</span>
 					</div>
 				</div>
+				<div class="break_line"></div>
 				<div class="base_line line_position4">
 					<div class="center_line"></div>
 					<div class="radius_box black">
@@ -160,7 +160,7 @@
 						<span>상품기획본부</span>
 					</div>
 					<div class="radius_box">
-						<span>브랜드전략기획팀</span>
+						<span>브랜드전략<br class="tap_br">기획팀</span>
 					</div>
 					<div class="radius_box">
 						<span>상품개발팀</span>
@@ -182,9 +182,9 @@
 			<div class="relative_line">
 				<div class="center_line"></div>
 				<div class="point_year">
-					<h1 class="montserrat">2025</h1>
+					<h1 class="montserrat" data-aos="fade-right" data-aos-duration="1200">2025</h1>
 					<div class="point_circle"></div>
-					<div class="flx_col">
+					<div class="flx_col" data-aos="fade-left" data-aos-duration="1200">
 						<p>만년해로 브랜드 런칭</p>
 						<p>서울특별시 강남구 삼성동으로 회사 이전</p>
 						<p>브랜드 ‘애드엑스’ 지사 설립</p>
@@ -192,9 +192,9 @@
 				</div>
 
 				<div class="point_year">
-					<h1 class="montserrat">2024</h1>
+					<h1 class="montserrat" data-aos="fade-right" data-aos-duration="1200">2024</h1>
 					<div class="point_circle"></div>
-					<div class="flx_col">
+					<div class="flx_col" data-aos="fade-left" data-aos-duration="1200">
 						<p>인천 서구 청라동으로 회사 이전</p>
 						<p>브랜드 기획 및 상품기획 본부 신설</p>
 						<p>네이처 인사이트 브랜드 런칭</p>
@@ -204,9 +204,9 @@
 				</div>
 
 				<div class="point_year">
-					<h1 class="montserrat">2023</h1>
+					<h1 class="montserrat" data-aos="fade-right" data-aos-duration="1200">2023</h1>
 					<div class="point_circle"></div>
-					<div class="flx_col">
+					<div class="flx_col" data-aos="fade-left" data-aos-duration="1200">
 						<p>개인사업자 풀림 설립</p>
 						<p>개인사업자 코이스랩 업무제휴 MOU 체결</p>
 						<p>법인사업자 주식회사 위드데일리 업무제휴 MOU 체결</p>
@@ -216,9 +216,9 @@
 				</div>
 
 				<div class="point_year">
-					<h1 class="montserrat">2022</h1>
+					<h1 class="montserrat" data-aos="fade-right" data-aos-duration="1200">2022</h1>
 					<div class="point_circle"></div>
-					<div class="flx_col">
+					<div class="flx_col" data-aos="fade-left" data-aos-duration="1200">
 						<p>개인사업자 마케팅을 풀다 설립</p>
 						<p>창업 소상공인 대상 디지털 마케팅 지원사업 선정</p>
 					</div>
@@ -233,7 +233,7 @@
 				<p class="suit">애드엑스는 2024년 연간 매출 180억원을 달성하며<br>큰 성장세를 보이고 있습니다.</p>
 			</div>
 			<div class="img_wrap">
-				<img src="./images/about_graph.svg" alt="">
+				<img src="./images/about_graph.svg" alt="" data-aos="fade-up" data-aos-duration="1200">
 			</div>
 		</div>
 		<footer>
@@ -246,7 +246,7 @@
 						<li><strong>B2.</strong>&nbsp;광주광역시 서구 내방로 233, 3층6층</li>
 					</ul>
 					<p class="e_mp_h">
-						a87439716@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;&nbsp;&nbsp;010-8743-9716
+						a87439716@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;&nbsp;&nbsp;02-555-9716
 					</p>
 					<span class="Copyright">Copyright © ADX. All rights reserved.<span>
 				</div>
